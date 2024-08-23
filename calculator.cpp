@@ -109,9 +109,9 @@ cout<<"your equation e^"+first+"="+solution;
 run=true;
 }
 else if(o=="ln"){
-while(first_num<0){
+while(first_num<=0){
 clear();
-cout<<"You cannot take a natrual log of a negative, try again\n";
+cout<<"You cannot take a natrual log of a negative or zero, try again\n";
 numcheck(1);
 first=to_string(first_num);
 }
