@@ -82,7 +82,7 @@ while(first_num<0){
 clear();
 cout<<"You cannot square_root a negative, try again\n";
 numcheck(1);
-first=first_num;
+first=to_string(first_num);
 }
 solution=to_string(sqrt(first_num));
 cout<<"your equation is: √"+first+"="+solution;
@@ -109,6 +109,12 @@ cout<<"your equation e^"+first+"="+solution;
 run=true;
 }
 else if(o=="ln"){
+while(first_num<0){
+clear();
+cout<<"You cannot take a natrual log of a negative, try again\n";
+numcheck(1);
+first=to_string(first_num);
+}
 solution=to_string(log(first_num));
 cout<<"your equation ln"+first+"="+solution;
 run=true;
